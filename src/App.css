@@ -1,0 +1,144 @@
+/* ===================== */
+/* Global Styles */
+/* ===================== */
+
+/* Reseteo básico */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+/* Títulos */
+h2 {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+/* Animaciones de entrada con AOS */
+[data-aos] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================== */
+/* Project Cards */
+/* ===================== */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.75rem;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de proyecto con ícono */
+.project-card a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.project-icon {
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+/* ===================== */
+/* Stack Section */
+/* ===================== */
+.stack-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.75rem;
+  background-color: #fff;
+}
+
+.stack-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stack-item {
+  transition: background-color 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.stack-item:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* ===================== */
+/* Education Cards */
+/* ===================== */
+.education-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.75rem;
+  background-color: #fff;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.education-period {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.contact-item {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-item:hover {
+  transform: translateX(8px);
+}
+
+.contact-icon {
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+  color: #0d6efd; /* Azul Bootstrap */
+}
+
+/* Botón flotante de WhatsApp en la esquina inferior izquierda */
+.whatsapp-float-right {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.whatsapp-float-left:hover {
+  background-color: #20b955;
+  transform: scale(1.1);
+}
