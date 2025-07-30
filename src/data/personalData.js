@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Jose Alfonso Avila y Kevin Soto",
   profesion: "Medicos Veterinarios y Zootecnista",
-  email: "Avilaquitianjuanpablo@gmail.com",
+  email: "alfonso25avila@gmail.com",
   phone: "+57 3188505664",
   location: "Bucaramanga, Santander, Colombia",
 };
